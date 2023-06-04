@@ -5,3 +5,5 @@ build
 
 prisma/migrations
 package-lock.json
+
+coverage
