@@ -29,9 +29,6 @@ describe('Register Use Case', () => {
     })
 
     it('should not be able to authenticate with wrong email', async () => {
-        const usersRepository = new InMemoryUsersRepository()
-        const sut = new AuthenticateUseCase(usersRepository)
-
         await expect(() => sut.execute({
             email: 'johndoe@example.com',
             password: '123456'
@@ -39,9 +36,6 @@ describe('Register Use Case', () => {
     })
 
     it('should not be able to authenticate with wrong password', async () => {
-        const usersRepository = new InMemoryUsersRepository()
-        const sut = new AuthenticateUseCase(usersRepository)
-
         await usersRepository.create({
             name: 'John',
             email: 'johndoe@example.com',
