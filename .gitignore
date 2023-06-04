@@ -1,1 +1,9 @@
 node_modules
+build
+
+.env
+
+prisma/migrations
+package-lock.json
+
+coverage
