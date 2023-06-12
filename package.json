@@ -7,7 +7,9 @@
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
-    "test": "vitest run",
+    "test": "vitest run --dir src/use-cases",
+    "test:e2e": "vitest run --dir src/http",
+
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui"
@@ -37,6 +39,7 @@
     "vitest": "0.31.4"
   },
   "dependencies": {
+    "@fastify/jwt": "7.0.0",
     "@prisma/client": "4.14.0",
     "@vitest/ui": "0.31.4",
     "bcryptjs": "2.4.3",

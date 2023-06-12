@@ -1,9 +1,9 @@
 import { describe, expect, it, beforeEach, vi, afterEach } from 'vitest'
-import { InMemoryCheckInsRepository } from '../repositories/in-memory/in-memory-check-ins-repository';
 import { CheckInUseCase } from './check-in';
-import { InMemoryGymsRepository } from '../repositories/in-memory/in-memory-gyms-repository';
 import { MaxNumberOfCheckInsError } from './errors/max-number-of-check-ins';
 import { MaxDistanceError } from './errors/max-distance-error';
+import { InMemoryCheckInsRepository } from '@/http/repositories/in-memory/in-memory-check-ins-repository';
+import { InMemoryGymsRepository } from '@/http/repositories/in-memory/in-memory-gyms-repository';
 
 let checkInsRepository: InMemoryCheckInsRepository
 let gymsRepository: InMemoryGymsRepository

@@ -1,4 +1,4 @@
-import { CheckInsRepository } from "../repositories/check-ins-repository";
+import { CheckInsRepository } from "@/http/repositories/check-ins-repository";
 
 interface GetUserMetricsUseCaseRequest {
     userId: string
