@@ -9,7 +9,7 @@ export async function createAndAuthenticateUser(app: FastifyInstance, isAdmin = 
             name: 'John Doe',
             email: 'johndoe@example.com',
             password_hash: await hash('123456', 6),
-            role: isAdmin ? 'ADMIN' : 'MEMBER'
+            role: isAdmin ? 'ADMIN' : 'MEMBER',
         }
     })
 

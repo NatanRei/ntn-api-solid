@@ -25,7 +25,7 @@ export default <Environment> {
         const schema = randomUUID()
         const databaseURL = generateDatabaseUrl(schema)
         process.env.DATABASE_URL = databaseURL
-        execSync('npx prisma migrate deploy')
+        await execSync('npx prisma migrate deploy')
 
 
         return {
