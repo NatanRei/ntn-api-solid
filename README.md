@@ -1,6 +1,14 @@
-# App
+# GymPass Style API
 
-GymPass style app.
+Este é um projeto de uma aplicação semelhante ao GymPass, que permite aos usuários se cadastrar, autenticar, realizar check-ins em academias e obter informações sobre seu perfil e histórico de check-ins. A aplicação utiliza várias tecnologias e componentes, incluindo GitHub Actions, Vitest para testes unitários e end-to-end, JWT, Fastify, TypeScript, Prisma, PostgreSQL, e Zod.
+
+## Como Executar o Projeto
+
+- Certifique-se de ter o Node.js instalado em sua máquina.
+- Clone o repositório do projeto: git clone https://github.com/NatanRei/ntn-api-solid.git
+- Instale as dependências do projeto: npm install.
+- Configure as variáveis de ambiente, incluindo as informações de conexão com o banco de dados e as chaves JWT.
+- Execute a aplicação: npm run start:dev
 
 ## RFs (Requisitos funcionais)
 
